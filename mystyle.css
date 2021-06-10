@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: hsl(0, 0%, 98%)
+}
+.main{
+    margin: 25% 10%;
+}
+.top {
+    text-align: justify;
+    align-items: center;
+}
+.top h2 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.top h2:nth-of-type(2){
+    font-weight: 400;
+    font-weight: bold;
+}
+.top h4 {
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+}
+.mid{
+    margin-top: 25%;
+}
+.card {
+    display: grid;
+    grid-template-rows: 15% 30% auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.26);
+    margin-bottom: 10%;
+    padding: 10%;
+    height: 20vh;
+}
+.card h3  {
+    color: hsl(234, 12%, 34%);
+    font-weight: 400;
+    align-self: center;
+}
+.card p {
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    font-size: 12px;
+}
+.card img {
+    align-self:flex-end;
+    justify-self: right;
+}
+.verde {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.vermelho {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.amarelo {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.azul {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media screen and (min-width:800px) {
+.main{
+margin: 5% 11.5%;
+}
+.top{
+    margin: 0% 27%;
+    font-size: 22.5px;
+}
+.top h4{
+    font-size: 14.25px;
+}
+.vermelho {
+    grid-area: vermelho;
+  }
+  .verde {
+    grid-area: verde;
+  }
+  .amarelo {
+    grid-area: amarelo;
+  }
+  .azul {
+    grid-area: azul;
+  }
+.mid{
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: 31.8% 3% 31.8% 3% 31.8%;
+    grid-template-rows: 135px 145px 135px;
+    grid-template-areas: 
+    ". . vermelho . ."
+    "verde . . . azul"
+    ". . amarelo . .";
+}
+.card {
+    padding: 12%;
+    height: 160px;
+}
+
+}
